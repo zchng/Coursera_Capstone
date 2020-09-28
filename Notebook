@@ -6,3 +6,15 @@ Traffic collision is one of the leading causes of death all around the world. Wi
 With the output of the predictions here, government institutions can plan improvements around Seattle roads and general urban growth with more attention to the most critical areas, deciding where to construct hospitals or policy bases for faster response to occurences.
 
 Insurance companies can also benefit from these insights to provide more tailored services, allowing them to rate new clients, giving discount or charging more based on the are they live.
+
+import numpy as np
+import pandas as pd
+import itertools 
+import matplotlib.pyplot as plt
+from matplotlib.ticker import NullFormatter  
+import matplotlib.ticker as ticker
+from sklearn import preprocessing
+%matplotlib inline
+
+df = pd.read_csv("https://s3.us.cloud-object-storage.appdomain.cloud/cf-courses-data/CognitiveClass/DP0701EN/version-2/Data-Collisions.csv", low_memory=False)
+df.head()
